@@ -1,0 +1,58 @@
+
+    body {
+            background-color: #eeeeee;
+        }
+
+        .h7 {
+            font-size: 0.8rem;
+        }
+
+        .gedf-wrapper {
+            margin-top: 0.97rem;
+        }
+
+        @media (min-width: 992px) {
+            .gedf-main {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+            .gedf-card {
+                margin-bottom: 2.77rem;
+            }
+        }
+
+        /**Reset Bootstrap*/
+        .dropdown-toggle::after {
+            content: none;
+        }
+
+
+.navbar-custom {
+
+    background-color: #5f788a!important;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   /* background-color: white;*/
+  
+  color:        #ffb3b3!important;
+}
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.navbar-nav>a:hover{
+ 
+  background-size: 10px;
+  color: #ffb3b3! important;
+
+  }
+.nav:hover a {
+    color: maroon;
+}
+.navbar-link{
+    color: white;
+    }
+
+

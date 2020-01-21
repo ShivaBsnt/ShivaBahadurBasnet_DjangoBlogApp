@@ -1,0 +1,105 @@
+  body{background:#75e2e9 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+
+.mid{
+	height: 100vh;
+	background-color: green;
+
+}
+.midtop{
+	height: 0vh;
+	background-color: white;
+}
+.midbottom{
+	height: 0vh;
+	background-color: white;
+}
+.midmid{
+	height: 100vh;
+	background-color: violet;
+
+}
+.left{
+	height: 100vh;
+	background-color: #3786be;
+}
+.right{
+	height: 100vh;
+	background-color: white;
+}
+.lefttop{
+	padding-top: 40px;
+	height: 20vh;
+	
+	padding-left: 40px;
+
+}
+.leftmid{
+height: 60vh;
+background-color: red;
+}
+
+.leftbottom{
+	height: 10vh;
+	background-color: pink;
+
+}
+.info{
+	font-size: 40px;
+
+}
+.blogtext{
+	font-size: 60px;
+	    font-family: fantasy, cursive, serif;
+}
+.btns{
+	background-color: white;
+	height: 40px;
+	font-size: 20px;
+	    font-family: fantasy, cursive, serif;
+}
+.information{
+	font-size: 20px;
+	    font-family: fantasy, cursive, serif;
+	    padding-left: 20px;
+	    padding-right: 20px;
+}
+.footinfo{
+	font-size: 20px;
+	    font-family: fantasy, cursive, serif;
+	    padding-left: 20px;
+	    padding-right: 20px;
+}
+.registerhead{
+	font-size: 40px;
+
+	color: #3786be;
+}
+.space{
+	height: 40px;
+	
+}
+.glow {
+  font-size: 60px;
+  font-family: fantasy, cursive, serif;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
