@@ -2,15 +2,18 @@ from django.contrib.auth.models import User
 from .models import Post
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from users.models import Profile
 
 
 @login_required
 def home(request):
     current_user_id = request.user.id
     user = User.objects.get(id=current_user_id)
+    # profile = User.objects.get(id=current_user_id)
     context = {
         'posts': Post.objects.all(),
-        'user': user
+        'user': user,
+
     }
     print(context)
     print(Post)

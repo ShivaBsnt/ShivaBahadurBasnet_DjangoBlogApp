@@ -18,6 +18,7 @@ from django.urls import path
 from Blog import views
 
 
+
 urlpatterns = [
    path('home/', views.home, name='home'),
    path('post/new/', views.post_list_view, name='post'),
@@ -26,7 +27,7 @@ urlpatterns = [
 
 
 
+
 ]
 
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
