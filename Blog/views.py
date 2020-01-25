@@ -3,16 +3,19 @@ from .models import Post
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from users.models import Profile
+from Advertisement.models import Ads
 
 
 @login_required
 def home(request):
     current_user_id = request.user.id
     user = User.objects.get(id=current_user_id)
+    ads = Ads.objects.all()
     # profile = User.objects.get(id=current_user_id)
     context = {
         'posts': Post.objects.all(),
         'user': user,
+        'ads': ads,
 
     }
     print(context)
