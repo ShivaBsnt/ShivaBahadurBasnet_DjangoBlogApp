@@ -110,8 +110,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'bbang2358@gmail.com'
-EMAIL_HOST_PASSWORD = 'c.ronaldo7'
+EMAIL_HOST_USER = 'letssharethoughts123@gmail.com'
+EMAIL_HOST_PASSWORD = 'c.ronaldo72056'
 EMAIL_PORT = 587
 
 
@@ -143,4 +143,5 @@ MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'login'
 

@@ -13,7 +13,7 @@ def home(request):
     ads = Ads.objects.all()
     # profile = User.objects.get(id=current_user_id)
     context = {
-        'posts': Post.objects.all(),
+        'posts': Post.objects.all().order_by('-date_posted'),
         'user': user,
         'ads': ads,
 
@@ -24,6 +24,7 @@ def home(request):
     return render(request, 'Blog/base.html', context)
 
 
+@login_required
 def post_list_view(request):
     author = request.user
     title = request.POST.get('title')
@@ -32,6 +33,7 @@ def post_list_view(request):
     return redirect('home')
 
 
+@login_required
 def post_delete_view(request, pk):
     current_post = Post.objects.get(id=pk)
     post_author = current_post.author
@@ -42,6 +44,7 @@ def post_delete_view(request, pk):
     return redirect('home')
 
 
+@login_required()
 def post_update_view(request, pk):
     current_post = Post.objects.get(id=pk)
     post_author = current_post.author
